@@ -35,9 +35,8 @@ val dataModule = module {
     }
 }
 
-fun initKoin() = initKoin(emptyList())
 
-fun initKoin(extraModules: List<Module>) {
+fun initKoin(extraModules: List<Module> = emptyList()) {
     startKoin {
         modules(
             dataModule,
@@ -49,10 +48,10 @@ fun initKoin(extraModules: List<Module>) {
 fun initKoinIOS() {
     initKoin(
         listOf(
-            module {
-                factory { ListViewModel(get()) }
-                factory { DetailViewModel(get()) }
-            }
+//            module {
+//                factory { ListViewModel(get()) }
+//                factory { DetailViewModel(get()) }
+//            }
         )
     )
 }

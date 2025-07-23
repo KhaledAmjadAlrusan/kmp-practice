@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29C219D32E3082F600EE8C63 /* KMPNativeCoroutinesAsync in Frameworks */ = {isa = PBXBuildFile; productRef = 29C219D22E3082F600EE8C63 /* KMPNativeCoroutinesAsync */; };
+		29C219D52E3082F600EE8C63 /* KMPNativeCoroutinesCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 29C219D42E3082F600EE8C63 /* KMPNativeCoroutinesCombine */; };
+		29C219D72E3082F600EE8C63 /* KMPNativeCoroutinesCore in Frameworks */ = {isa = PBXBuildFile; productRef = 29C219D62E3082F600EE8C63 /* KMPNativeCoroutinesCore */; };
+		29C219D92E3082F600EE8C63 /* KMPNativeCoroutinesRxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 29C219D82E3082F600EE8C63 /* KMPNativeCoroutinesRxSwift */; };
+		29C219DB2E30834000EE8C63 /* KMPNativeCoroutinesAsync in Frameworks */ = {isa = PBXBuildFile; productRef = 29C219DA2E30834000EE8C63 /* KMPNativeCoroutinesAsync */; };
+		29C219DD2E30834000EE8C63 /* KMPNativeCoroutinesCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 29C219DC2E30834000EE8C63 /* KMPNativeCoroutinesCombine */; };
+		29C219DF2E30834000EE8C63 /* KMPNativeCoroutinesCore in Frameworks */ = {isa = PBXBuildFile; productRef = 29C219DE2E30834000EE8C63 /* KMPNativeCoroutinesCore */; };
+		29C219E12E30834000EE8C63 /* KMPNativeCoroutinesRxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 29C219E02E30834000EE8C63 /* KMPNativeCoroutinesRxSwift */; };
+		29C219E42E30845300EE8C63 /* KMPObservableViewModelCore in Frameworks */ = {isa = PBXBuildFile; productRef = 29C219E32E30845300EE8C63 /* KMPObservableViewModelCore */; };
+		29C219E62E30845300EE8C63 /* KMPObservableViewModelSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 29C219E52E30845300EE8C63 /* KMPObservableViewModelSwiftUI */; };
+		29C219E82E30846600EE8C63 /* KMPNativeCoroutinesAsync in Frameworks */ = {isa = PBXBuildFile; productRef = 29C219E72E30846600EE8C63 /* KMPNativeCoroutinesAsync */; };
+		29C219EA2E30846600EE8C63 /* KMPNativeCoroutinesCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 29C219E92E30846600EE8C63 /* KMPNativeCoroutinesCombine */; };
+		29C219EC2E30846600EE8C63 /* KMPNativeCoroutinesCore in Frameworks */ = {isa = PBXBuildFile; productRef = 29C219EB2E30846600EE8C63 /* KMPNativeCoroutinesCore */; };
+		29C219EE2E30846600EE8C63 /* KMPNativeCoroutinesRxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 29C219ED2E30846600EE8C63 /* KMPNativeCoroutinesRxSwift */; };
 		8F13105C8B8815DD689FCB1F /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863EE734CEB492A474E732CA /* Pods_iosApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +63,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C219D52E3082F600EE8C63 /* KMPNativeCoroutinesCombine in Frameworks */,
+				29C219D32E3082F600EE8C63 /* KMPNativeCoroutinesAsync in Frameworks */,
+				29C219EC2E30846600EE8C63 /* KMPNativeCoroutinesCore in Frameworks */,
+				29C219E42E30845300EE8C63 /* KMPObservableViewModelCore in Frameworks */,
+				29C219E62E30845300EE8C63 /* KMPObservableViewModelSwiftUI in Frameworks */,
+				29C219DF2E30834000EE8C63 /* KMPNativeCoroutinesCore in Frameworks */,
+				29C219EA2E30846600EE8C63 /* KMPNativeCoroutinesCombine in Frameworks */,
+				29C219E12E30834000EE8C63 /* KMPNativeCoroutinesRxSwift in Frameworks */,
+				29C219DB2E30834000EE8C63 /* KMPNativeCoroutinesAsync in Frameworks */,
+				29C219D92E3082F600EE8C63 /* KMPNativeCoroutinesRxSwift in Frameworks */,
+				29C219E82E30846600EE8C63 /* KMPNativeCoroutinesAsync in Frameworks */,
+				29C219DD2E30834000EE8C63 /* KMPNativeCoroutinesCombine in Frameworks */,
+				29C219EE2E30846600EE8C63 /* KMPNativeCoroutinesRxSwift in Frameworks */,
+				29C219D72E3082F600EE8C63 /* KMPNativeCoroutinesCore in Frameworks */,
 				8F13105C8B8815DD689FCB1F /* Pods_iosApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +170,10 @@
 			);
 			mainGroup = B9DA97A82DC1472C00A4DA20;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				29C219D12E3082F600EE8C63 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */,
+				29C219E22E30845300EE8C63 /* XCRemoteSwiftPackageReference "KMP-ObservableViewModel" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B9DA97B22DC1472C00A4DA20 /* Products */;
 			projectDirPath = "";
@@ -358,7 +390,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,7 +426,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,6 +461,98 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29C219D12E3082F600EE8C63 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rickclephas/KMP-NativeCoroutines";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		29C219E22E30845300EE8C63 /* XCRemoteSwiftPackageReference "KMP-ObservableViewModel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rickclephas/KMP-ObservableViewModel.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29C219D22E3082F600EE8C63 /* KMPNativeCoroutinesAsync */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C219D12E3082F600EE8C63 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesAsync;
+		};
+		29C219D42E3082F600EE8C63 /* KMPNativeCoroutinesCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C219D12E3082F600EE8C63 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesCombine;
+		};
+		29C219D62E3082F600EE8C63 /* KMPNativeCoroutinesCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C219D12E3082F600EE8C63 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesCore;
+		};
+		29C219D82E3082F600EE8C63 /* KMPNativeCoroutinesRxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C219D12E3082F600EE8C63 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesRxSwift;
+		};
+		29C219DA2E30834000EE8C63 /* KMPNativeCoroutinesAsync */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C219D12E3082F600EE8C63 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesAsync;
+		};
+		29C219DC2E30834000EE8C63 /* KMPNativeCoroutinesCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C219D12E3082F600EE8C63 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesCombine;
+		};
+		29C219DE2E30834000EE8C63 /* KMPNativeCoroutinesCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C219D12E3082F600EE8C63 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesCore;
+		};
+		29C219E02E30834000EE8C63 /* KMPNativeCoroutinesRxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C219D12E3082F600EE8C63 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesRxSwift;
+		};
+		29C219E32E30845300EE8C63 /* KMPObservableViewModelCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C219E22E30845300EE8C63 /* XCRemoteSwiftPackageReference "KMP-ObservableViewModel" */;
+			productName = KMPObservableViewModelCore;
+		};
+		29C219E52E30845300EE8C63 /* KMPObservableViewModelSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C219E22E30845300EE8C63 /* XCRemoteSwiftPackageReference "KMP-ObservableViewModel" */;
+			productName = KMPObservableViewModelSwiftUI;
+		};
+		29C219E72E30846600EE8C63 /* KMPNativeCoroutinesAsync */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C219D12E3082F600EE8C63 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesAsync;
+		};
+		29C219E92E30846600EE8C63 /* KMPNativeCoroutinesCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C219D12E3082F600EE8C63 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesCombine;
+		};
+		29C219EB2E30846600EE8C63 /* KMPNativeCoroutinesCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C219D12E3082F600EE8C63 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesCore;
+		};
+		29C219ED2E30846600EE8C63 /* KMPNativeCoroutinesRxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C219D12E3082F600EE8C63 /* XCRemoteSwiftPackageReference "KMP-NativeCoroutines" */;
+			productName = KMPNativeCoroutinesRxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9DA97A92DC1472C00A4DA20 /* Project object */;
 }

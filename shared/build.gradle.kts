@@ -38,6 +38,7 @@ kotlin {
         }
         all {
             languageSettings.optIn("kotlinx.cinterop.ExperimentalForeignApi")
+            languageSettings.optIn("kotlin.experimental.ExperimentalObjCName")
         }
         commonMain.dependencies {
             // put your Multiplatform dependencies here
@@ -60,7 +61,7 @@ kotlin {
         ios.deploymentTarget = "14.1"
 
         framework {
-            baseName = "shared"
+            baseName = "Shared"
             isStatic = true
         }
     }
