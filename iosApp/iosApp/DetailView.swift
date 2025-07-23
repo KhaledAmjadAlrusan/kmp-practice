@@ -14,25 +14,35 @@ import KMPObservableViewModelSwiftUI
 struct DetailView: View {
     let objectId: Int32
 
-//    @StateViewModel
-//    var viewModel = DetailViewModel(
-//        museumRepository: KoinDependencies().museumRepository
-//    )
-//
-//    let objectId: Int32
-//
-//    var body: some View {
-//        VStack {
-//            if let obj = viewModel.museumObject {
-//                ObjectDetails(obj: obj)
-//            }
-//        }
-//        .onAppear {
-//            viewModel.setId(objectId: objectId)
-//        }
-//    }
+    @ObservedViewModel
+    var viewModel: DetailViewModel
+
+    init(objectId: Int32) {
+        self.objectId = objectId
+        _viewModel = ObservedViewModel(wrappedValue: DetailViewModel(
+            museumRepository: KoinDependencies().museumRepository
+        ))
+    }
+
     var body: some View {
-        Text("Detail View for \(objectId)")
+        Group {
+            switch viewModel.state {
+            case is DetailViewState.Loading:
+                ProgressView()
+            case let error as DetailViewState.Error:
+                Text(error.message)
+            case let content as DetailViewState.Content:
+                if let obj = content.museumObject {
+                    ObjectDetails(obj: obj)
+                } else {
+                    Text("No data available")
+                }
+            default:
+                Text("Unknown state")
+            }
+        }.onAppear{
+            viewModel.dispatch(intent: DetailIntent.LoadMuseum(objectId: objectId))
+        }
     }
 }
 

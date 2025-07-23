@@ -1,16 +1,13 @@
 package org.rukban.practice.screens
 
-import org.rukban.practice.data.MuseumObject
-import com.rickclephas.kmp.observableviewmodel.ViewModel
-import com.rickclephas.kmp.observableviewmodel.stateIn
 import com.rickclephas.kmp.nativecoroutines.NativeCoroutinesState
+import com.rickclephas.kmp.observableviewmodel.ViewModel
 import com.rickclephas.kmp.observableviewmodel.launch
-import kotlinx.coroutines.ExperimentalCoroutinesApi
+import com.rickclephas.kmp.observableviewmodel.stateIn
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.flatMapLatest
-import kotlinx.coroutines.flow.flowOf
+import org.rukban.practice.data.MuseumObject
 import org.rukban.practice.domain.MuseumRepository
 
 class DetailViewModel(
@@ -18,7 +15,9 @@ class DetailViewModel(
 ) : ViewModel() {
 
     private val _state = MutableStateFlow<DetailViewState>(DetailViewState.Loading)
-    val state: StateFlow<DetailViewState> = _state
+
+    @NativeCoroutinesState
+    val state: StateFlow<DetailViewState> = _state.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), DetailViewState.Loading)
 
     fun dispatch(intent: DetailIntent) {
         when (intent) {
@@ -38,7 +37,6 @@ class DetailViewModel(
         }
     }
 }
-
 
 sealed class DetailIntent {
     data class LoadMuseum(val objectId: Int) : DetailIntent()

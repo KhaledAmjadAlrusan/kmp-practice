@@ -41,8 +41,6 @@ class ListViewModel(
     }
 }
 
-
-
 sealed class ListIntent {
     data object LoadMuseums : ListIntent()
 }
