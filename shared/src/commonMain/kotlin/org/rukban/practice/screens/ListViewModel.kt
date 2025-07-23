@@ -15,10 +15,10 @@ class ListViewModel(
     private val museumRepository: MuseumRepository
 ) : ViewModel() {
 
-    private val _state = MutableStateFlow<ListViewState>(ListViewState.Error("Initial"))
+    private val _state = MutableStateFlow<ListViewState>(ListViewState.Loading)
 
     @NativeCoroutinesState
-    val state: StateFlow<ListViewState> = _state.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), ListViewState.Content(emptyList()))
+    val state: StateFlow<ListViewState> = _state.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), ListViewState.Loading)
 
     fun dispatch(intent: ListIntent) {
         when (intent) {

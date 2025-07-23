@@ -12,6 +12,8 @@ import KMPNativeCoroutinesAsync
 import KMPObservableViewModelSwiftUI
 
 struct DetailView: View {
+    let objectId: Int32
+
 //    @StateViewModel
 //    var viewModel = DetailViewModel(
 //        museumRepository: KoinDependencies().museumRepository
@@ -30,7 +32,7 @@ struct DetailView: View {
 //        }
 //    }
     var body: some View {
-        Text("Detail View")
+        Text("Detail View for \(objectId)")
     }
 }
 

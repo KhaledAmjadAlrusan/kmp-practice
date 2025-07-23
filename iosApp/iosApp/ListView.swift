@@ -92,7 +92,7 @@ struct ObjectFrame: View {
 @ViewBuilder
 private func museumGridItems(for items: [MuseumObject]) -> some View {
     ForEach(items, id: \.self) { item in
-        NavigationLink(destination: DetailView()) {
+        NavigationLink(destination: DetailView(objectId: item.objectID)) {
             ObjectFrame(obj: item)
         }
         .buttonStyle(PlainButtonStyle())
