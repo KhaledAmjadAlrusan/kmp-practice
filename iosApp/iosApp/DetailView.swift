@@ -35,7 +35,7 @@ struct DetailView: View {
                 if let obj = content.museumObject {
                     ObjectDetails(obj: obj)
                 } else {
-                    Text("No data available")
+                    Text(SharedStrings().noDataAvailable)
                 }
             default:
                 Text("Unknown state")
@@ -71,13 +71,13 @@ struct ObjectDetails: View {
                     Text(obj.title)
                         .font(.title)
 
-                    LabeledInfo(label: "Artist", data: obj.artistDisplayName)
-                    LabeledInfo(label: "Date", data: obj.objectDate)
-                    LabeledInfo(label: "Dimensions", data: obj.dimensions)
-                    LabeledInfo(label: "Medium", data: obj.medium)
-                    LabeledInfo(label: "Department", data: obj.department)
-                    LabeledInfo(label: "Repository", data: obj.repository)
-                    LabeledInfo(label: "Credits", data: obj.creditLine)
+                    LabeledInfo(label: SharedStrings().labelArtist, data: obj.artistDisplayName)
+                    LabeledInfo(label: SharedStrings().labelDate, data: obj.objectDate)
+                    LabeledInfo(label: SharedStrings().labelDimensions, data: obj.dimensions)
+                    LabeledInfo(label: SharedStrings().labelMedium, data: obj.medium)
+                    LabeledInfo(label: SharedStrings().labelDepartment, data: obj.department)
+                    LabeledInfo(label: SharedStrings().labelRepository, data: obj.repository)
+                    LabeledInfo(label: SharedStrings().labelCredits, data: obj.creditLine)
                 }
                 .padding(16)
             }
